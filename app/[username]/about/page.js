@@ -4,9 +4,10 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
-export default function Home({ params }) {
+export default function About({ params }) {
     const [userData, setUserData] = useState({})
     const { username } = params;
+
     // function fetchData() {
     //     const data = fetch('https://strapi-api.sgate.net/api/profiles?populate[profile_pic][fields][0]=url&filters[name][$eq]=' + username, {
     //         method: 'GET',
@@ -24,11 +25,13 @@ export default function Home({ params }) {
     // }
     // useEffect(() => { fetchData() }, [])
     return (
+        <main className="flex min-h-screen flex-col items-center justify-between bg-zinc-400 ">
             
             <div className="h-[90vh] w-[30%] shadow-lg mt-16 rounded-lg bg-white intro-x">
-
+About
             </div>
 
             
+        </main>
     );
 }

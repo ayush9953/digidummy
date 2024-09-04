@@ -5,7 +5,7 @@ import { useNavProvider } from "./nav-provider";
 import { useInView } from "framer-motion";
 
 export default function PageSection({
-  section,
+  section,component
 }) {
   const ref = useRef(null);
   const { setActiveLink } = useNavProvider();
@@ -24,9 +24,9 @@ export default function PageSection({
     <section
       id={section.slug}
       ref={ref}
-      className="h-screen flex justify-center items-center"
+      className="h-screen  flex justify-center items-center"
     >
-      <h2 className="text-4xl font-bold text-slate-300">{section.title}</h2>
+      {component}
     </section>
   );
 }

@@ -23,9 +23,9 @@ export default function About() {
     // }
     // useEffect(() => { fetchData() }, [])
     return (
-        <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
-            
-      <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x">
+        <main className="flex min-h-screen md:w-[90%] lg:w-[50%]  flex-col  items-center justify-between ">
+
+            <div className="h-[90vh] w-full shadow-lg mt-[70px] rounded-lg bg-white intro-x overflow-auto">
 Contact
             </div>
 

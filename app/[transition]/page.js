@@ -23,9 +23,9 @@ export default function Profile() {
     // }
     // useEffect(() => { fetchData() }, [])
     return (
-        <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
+        <main className="flex min-h-screen lg:w-[50%] flex-col  items-center justify-between ">
 
-            <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x overflow-auto">
+            <div className="h-[90vh] w-full shadow-lg mt-[70px] rounded-lg bg-white intro-x overflow-auto">
                 <div class="cols-12">
                     <center>
                         <img align="middle" src="https://staging.sgate.in/html/digicard/images/sgate-logo.png" border="0" />

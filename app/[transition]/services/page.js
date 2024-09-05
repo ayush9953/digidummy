@@ -23,9 +23,9 @@ export default function About() {
     // }
     // useEffect(() => { fetchData() }, [])
     return (
-        <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
+        <main className="flex min-h-screen lg:w-[50%] flex-col  items-center justify-between ">
 
-            <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x p-4 overflow-auto">
+            <div className="h-[90vh] w-full shadow-lg mt-[70px] rounded-lg bg-white intro-x overflow-auto p-2">
                 <div class="relative h-16 w-100 flex items-center">
                     <span class="text-gray-950 w-fit block mx-auto text-4xl font-semibold">SERVICES</span>
                 </div>

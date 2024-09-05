@@ -23,9 +23,9 @@ export default function About() {
     // }
     // useEffect(() => { fetchData() }, [])
     return (
-        <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
+        <main className="flex min-h-screen lg:w-[50%] flex-col  items-center justify-between ">
 
-            <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x p-4 overflow-auto">
+            <div className="h-[90vh] w-full shadow-lg mt-[70px] p-2 rounded-lg bg-white intro-x overflow-auto">
                 <div class="rounded-b-[--card-border-radius]" >
 
                     <div class="relative h-16 w-100 flex items-center">

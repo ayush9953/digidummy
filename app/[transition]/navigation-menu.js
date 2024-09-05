@@ -50,8 +50,8 @@ export default function NavigationMenu({
 
   return (
     <header className="fixed top-0 md:top-2 w-full z-30">
-      <div className="max-w-5xl mx-auto px-40 sm:px-40">
-        <div className="flex h-14 w-full items-center justify-center gap-3 rounded-full border border-gray-100 bg-white px-3 shadow-lg shadow-black/[0.04]">
+      <div className="max-w-5xl mx-auto lg:px-40 sm:px-0">
+        <div className="flex h-14 w-full items-center justify-center gap-3 lg:rounded-full border border-gray-100 bg-white px-3 shadow-lg shadow-black/[0.04]">
          
           <nav className="relative flex justify-between w-full">
             <motion.div 
@@ -62,14 +62,14 @@ export default function NavigationMenu({
               }}
               transition={{ type: "spring", duration: 0.5 }}
             ></motion.div>
-            <ul className="relative flex flex-wrap items-center justify-between w-full gap-3 text-sm font-medium md:gap-8 px-16">
+            <ul className="relative flex flex-wrap items-center justify-between w-full gap-3 text-sm font-medium  lg:gap-8 px-10">
               {links.map((link) => (
                 <li key={link.slug}>
                   <Link
                     href={`${link.slug}`}
                     onClick={() => setActiveLink(link.slug)}
                     ref={activeLink == link.slug ? activeLinkRef : null}
-                    className={`inline-flex rounded-full px-3 py-1.5 text-slate-500 hover:text-indigo-500 [&.active]:text-indigo-600 ${activeLink === link.slug ? "active" : ""}`}
+                    className={`inline-flex rounded-full lg:px-3 lg:py-1.5 text-slate-500 hover:text-indigo-500 [&.active]:text-indigo-600 ${activeLink === link.slug ? "active" : ""}`}
                   >
                     {link.title}
                   </Link>

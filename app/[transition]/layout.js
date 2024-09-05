@@ -16,21 +16,21 @@ import Profile from "./page";
     const sections = [
       {
         title: "Profile",
-        slug: ``,
+        slug: `/${transition}`,
         component: <Profile/>
       },
       {
         title: "About",
-        slug: `${transition}/about`,
+        slug: `/${transition}/about`,
         component: <About/>
       },
       {
-        title: "Partners",
-        slug: "partners"
+        title: "Services",
+        slug: `/${transition}/services`
       },
       {
-        title: "Team",
-        slug: "team"
+        title: "Contact",
+        slug: `/${transition}/contact`
       }
     ];  
     return (
@@ -38,7 +38,7 @@ import Profile from "./page";
         <main className="relative flex min-h-screen flex-col overflow-hidden bg-zinc-400">
           <NavProvider>
             <NavigationMenu links={sections} />
-            <div className="w-full max-w-5xl mx-auto px-4 md:px-6">
+            <div className="w-full max-w-5xl mx-auto px-4 md:px-6 flex justify-center overflow-hidden">
               {children}
             </div> 
           </NavProvider>

@@ -26,7 +26,7 @@ export default function About() {
         <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
             
       <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x">
-About
+Services
             </div>
 
             

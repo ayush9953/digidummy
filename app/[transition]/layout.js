@@ -3,6 +3,7 @@ export const metadata = {
     description: "Page description",
   };
   
+import Background from "@/components/background";
 import About from "./about/page";
   import NavProvider from "./nav-provider";
   import NavigationMenu from "./navigation-menu";
@@ -35,12 +36,14 @@ import Profile from "./page";
     ];  
     return (
       <>
-        <main className="relative flex min-h-screen flex-col overflow-hidden bg-zinc-400">
+        <main className="relative flex min-h-screen flex-col overflow-hidden">
           <NavProvider>
             <NavigationMenu links={sections} />
             <div className="w-full max-w-5xl mx-auto px-4 md:px-6 flex justify-center overflow-hidden">
+
               {children}
             </div> 
+              <Background/>
           </NavProvider>
         </main>
   

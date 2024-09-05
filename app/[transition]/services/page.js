@@ -18,18 +18,41 @@ export default function About() {
     //         .then(res => res.json())
     //         .then(data => {setUserData(data.data[0]?.attributes);
     //             console.log(data.data[0]?.attributes);
-                
+
     //         })
     // }
     // useEffect(() => { fetchData() }, [])
     return (
         <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
+
+            <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x p-4 overflow-auto">
+                <div class="relative h-16 w-100 flex items-center">
+                    <span class="text-gray-950 w-fit block mx-auto text-4xl font-semibold">SERVICES</span>
+                </div>
+                <h2 class="mt-2 text-center font-semibold"><span style={{ color: '#f8b900', fontSize: '20px' }}>Cargodash<br />An Agile ERP Solution!<br /></span>Revolutionize your Logistics Management</h2>
             
-      <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x">
-Services
+            <center>
+                <img src="https://staging.sgate.in/html/digicard/images/sgate-1-3.png"/>
+            </center>
+            <ul class="servicelist mt-4">
+                <li>-Seamless Operations</li>
+                <li>-Real-Time Visibility</li>
+                <li>-Optimize Performance</li>
+                <li>-Scalable Solution</li>
+                <li>-Customizable Modules</li>
+                <li>-Advanced Security</li>
+                <li>-Mobile Accessibility</li>
+                <li>-Hassle-Free Integration</li>
+                <li>-Data-Driven Decisions</li>
+                <li>-Expert Support</li>
+            </ul>
+
+            <p class="dark:text-gray-300 text-gray-700 mt-4">Take your online presence to new heights with our top-tier domain registration and web 
+                hosting services. Join countless satisfied customers who have experienced the difference in performance and reliability. 
+                Get started today and unlock the full potential of your website!</p>
+
             </div>
 
-            
         </main>
     );
 }

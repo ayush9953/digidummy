@@ -18,18 +18,33 @@ export default function About() {
     //         .then(res => res.json())
     //         .then(data => {setUserData(data.data[0]?.attributes);
     //             console.log(data.data[0]?.attributes);
-                
+
     //         })
     // }
     // useEffect(() => { fetchData() }, [])
     return (
         <main className="flex min-h-screen w-[50%] flex-col  items-center justify-between ">
-            
-      <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x">
-About
+
+            <div className="h-[90vh] w-full shadow-lg mt-[14%] rounded-lg bg-white intro-x p-4 overflow-auto">
+                <div class="rounded-b-[--card-border-radius]" >
+
+                    <div class="relative h-16 w-100 flex items-center">
+                        <span class="text-gray-950 w-fit block mx-auto text-4xl font-semibold">ABOUT US</span>
+                    </div>
+
+                    <p><span >“We at S-Gate are driven by the ideology of Human centric approach”</span></p>
+                    <p >We are a leading tech solution provider to a wide range of industries across the globe. We have a team of dynamic individuals who are inclined towards problem solving. We work in close association with all the stakeholders at our clients end to create wholesome solutions.</p>
+                    <h3 class="mt-4 font-semibold text-gray-950 dark:text-white">Our Principles</h3>
+                    <ul class="servicelist" >
+                        <li>Process Focused</li>
+                        <li>Effective Communication</li>
+                        <li>Solution Orientated</li>
+                        <li>Product Ownership</li>
+                    </ul>
+                </div>
             </div>
 
-            
+
         </main>
     );
 }
